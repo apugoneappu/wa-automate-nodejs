@@ -29,7 +29,7 @@
     "build:config-for-bin": "cd build && ts-node build-config-json-for-bin.ts && cd ..",
     "postinstall": "patch-package",
     "install": "cross-env npm_config_yes=true npx ignore-check@latest -p '**.data.json' -p '**.node-persist**' --comment 'managed by open-wa'",
-    "start": "npx @open-wa/wa-automate -p ${PORT} -k 'zqI!Z&iqb0%8I|smd<b;HPTkuOi2:R' --keep-alive"
+    "start": "npx @open-wa/wa-automate -p ${PORT} -h 0.0.0.0 -k 'zqI!Z&iqb0%8I|smd<b;HPTkuOi2:R' --keep-alive"
   },
   "husky": {
     "hooks": {
